@@ -1,0 +1,438 @@
+.user{
+  border: 1px solid black;
+  display: flex ;
+  justify-content:space-between;
+margin-left: 78%;
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid lightgray;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+ 
+.container {
+  display: flex;
+  height: 100vh;
+}
+ 
+.sidebar {
+  width: 60px;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+ 
+.logo {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+ 
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+ 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+ 
+.menu a {
+  color: gray;
+  font-size: 24px;
+  text-align: center;
+  transition: color 0.2s;
+}
+ 
+.menu a:hover {
+  color: white;
+}
+ 
+ 
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px; /* Prevent overlap with the sidebar */
+}
+ 
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid lightgray;
+  width: calc(100% - 60px); /* Adjust width considering the sidebar */
+  position: fixed;
+  top: 0;
+  left: 60px; /* Align right after the sidebar */
+  height: 50px;
+}
+
+.topbar-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+ 
+.topbar input {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+ 
+.user {
+  display: flex;
+  align-items: center;
+}
+ 
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+ 
+.content {
+  padding: 20px;
+  margin-top: 60px; /* Prevents top content from hiding under the topbar */
+}
+ 
+ 
+ 
+ 
+.content {
+  padding: 1.5rem;
+}
+ 
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+ 
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+ 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+ 
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+ 
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+ 
+.bg-white {
+  background-color: #ffffff;
+}
+ 
+.p-4 {
+  padding: 1rem;
+}
+ 
+.rounded {
+  border-radius: 0.25rem;
+}
+ 
+.shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+ 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+ 
+.font-semibold {
+  font-weight: 600;
+}
+ 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+ 
+.border-2 {
+  border-width: 2px;
+}
+ 
+.border-blue-500 {
+  border-color: #3b82f6;
+}
+ 
+.text-blue-500 {
+  color: #3b82f6;
+}
+ 
+.flex {
+  display: flex;
+}
+ 
+.items-center {
+  align-items: center;
+}
+ 
+.justify-between {
+  justify-content: space-between;
+}
+ 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+/* attendanceStyles.css */
+.attendance-container {
+  font-family: Arial, sans-serif;
+  margin: 120px 0 0 180px;
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.year {
+  font-weight: bold;
+}
+
+.stats {
+  margin-top: 1rem;
+}
+
+.status-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.status {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.present { background-color: #4caf50; }
+.absent { background-color: #e53935; }
+.halfDay { background-color: #ffb300; }
+.notMarked { background-color: #29b6f6; }
+.holidays { background-color: #9e9e9e; }
+.others { background-color: #bdbdbd; }
+
+.calendar {
+  margin-top: 2rem;
+}
+
+.calendar h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day-header {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendar-day {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  margin: 2px;
+}
+
+.calendar-day.present {
+  background-color: #10b981; /* Green for Present */
+}
+
+.calendar-day.absent {
+  background-color: #ef4444; /* Red for Absent */
+}
+
+.calendar-day.halfDay {
+  background-color: #f59e0b; /* Orange for Half Day */
+}
+
+.calendar-day.notMarked {
+  background-color: #3b82f6; /* Blue for Not Marked */
+}
+
+.calendar-day.holiday {
+  background-color: #d1d5db; /* Light Gray for Holiday */
+}
+
+.leave-balance {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.leaves {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+.leave {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.casual { background-color: #d1c4e9; }
+.sick { background-color: #80deea; }
+
+
+.summary-container {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 120px 0px 0 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  margin-bottom: 80%;
+  margin-top: -532px;
+}
+
+/* General page styling */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+
+
+/* Header */
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title-group {
+  display: flex;
+  align-items: center;
+}
+
+.title-group img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.title-group h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.summary-year {
+  color: #6b7280;
+}
+
+/* Grid layout for boxes */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Individual summary box */
+.summary-box {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  border-left: 4px solid;
+}
+
+.summary-box h3 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.summary-box p {
+  margin: 4px 0 0;
+  color: #4b5563;
+}
+
+/* Colored borders */
+.border-green {
+  border-color: #10b981;
+}
+
+.border-red {
+  border-color: #ef4444;
+}
+
+.border-blue {
+  border-color: #3b82f6;
+}
+
+.border-purple {
+  border-color: #8b5cf6;
+}
+
+/* Footer note */
+.summary-note {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 16px;
+}
