@@ -436,3 +436,59 @@ h1 {
   color: #6b7280;
   margin-top: 16px;
 }
+/* EnrollmentSummary.css */
+.enrollment-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 120px 0 0 180px;
+  margin-bottom: 80%;
+  margin-top: -1000px;
+
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-details {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card-value {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-change {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.card-change.increase {
+  color: #4caf50; /* Green */
+}
+
+.card-change.decrease {
+  color: #f44336; /* Red */
+}
